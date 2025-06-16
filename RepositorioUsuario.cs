@@ -57,7 +57,8 @@ namespace pryVargas_IEFI
                                 NickName = nickname,
                                 ContrasenaUsuario = contrasena
                             };
-                        }
+                        } 
+
                         else
                         {
                             return null;

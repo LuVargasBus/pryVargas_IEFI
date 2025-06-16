@@ -21,5 +21,15 @@ namespace pryVargas_IEFI
         {
 
         }
+
+        private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabAdministrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

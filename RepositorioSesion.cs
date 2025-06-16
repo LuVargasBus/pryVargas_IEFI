@@ -40,5 +40,34 @@ namespace pryVargas_IEFI
                 }
             }
         }
+
+        public TimeSpan ObtenerTiempoConexion(int idUsuario, int idSesion)
+        {
+            using (SqlConnection conn = conexion.ObtenerConexion())
+            {
+                conn.Open();
+                string query = @"SELECT DATEDIFF (SECOND, inicio_sesion, fin_sesion) 
+                FROM Sesiones
+                WHERE id_sesion = @idSesion
+                AND id_usuario = @idUsuario AND fin_sesion IS NOT NULL";
+                
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("idSesion", idSesion);
+                    cmd.Parameters.AddWithValue("idUsuario", idUsuario);
+
+                    object result = cmd.ExecuteScalar(); 
+
+                    if (result != null && result != DBNull.Value)
+                    {
+                        int segundos = Convert.ToInt32(result);
+                        return TimeSpan.FromSeconds(segundos);
+                    } else 
+                        return TimeSpan.Zero;
+                }
+
+            }
+
+        }
     }
 }
