@@ -133,7 +133,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositorioSesion.cs" />
     <Compile Include="RepositorioTareas.cs" />
-    <Compile Include="RepositorioTareasxUsuario.cs" />
+    <Compile Include="RepositorioTareaxUsuario.cs" />
     <Compile Include="RepositorioUsuario.cs" />
     <Compile Include="Sesion.cs" />
     <Compile Include="Tareas.cs" />

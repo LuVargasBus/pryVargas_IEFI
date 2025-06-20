@@ -98,7 +98,6 @@
             this.panelPicture.Name = "panelPicture";
             this.panelPicture.Size = new System.Drawing.Size(200, 160);
             this.panelPicture.TabIndex = 5;
-            this.panelPicture.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // picAdmin
             // 
@@ -115,7 +114,7 @@
             this.btnPersonas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnPersonas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPersonas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPersonas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPersonas.ForeColor = System.Drawing.Color.White;
             this.btnPersonas.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
             this.btnPersonas.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnPersonas.IconFont = FontAwesome.Sharp.IconFont.Auto;

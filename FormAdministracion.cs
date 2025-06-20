@@ -19,16 +19,11 @@ namespace pryVargas_IEFI
         }
 
     
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void frmAdministracion_Load(object sender, EventArgs e)
         {
 
         }
+
         private Form formularioActual = null;
         private void AbrirFormularioEnPanel(Form formHijo )
         {
@@ -52,7 +47,7 @@ namespace pryVargas_IEFI
 
         private void btnPersonas_Click(object sender, EventArgs e)
         {
-            AbrirFormularioEnPanel(new FormPersonas());
+            AbrirFormularioEnPanel(new FormNuevoUsuario());
         }
 
         private void btnTareas_Click(object sender, EventArgs e)

@@ -27,11 +27,6 @@ namespace pryVargas_IEFI
             listaTareasPorUsuario = repoTareaUsuario.obtenerTareasPorUsuario();
         }
 
-        private void cmbFiltroUsuario_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
        
         private void FormConsultarTarea_Load(object sender, EventArgs e)
         {
