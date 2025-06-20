@@ -68,35 +68,35 @@ namespace pryVargas_IEFI
             }
         }
 
-        //public List<Usuario> obtenerTodosLosUsuarios()
-        //{
-        //    List<Usuario> listaUsuarios = new List<Usuario>();
+        public List<Usuario> obtenerTodosLosUsuarios()
+        {
+            List<Usuario> listaUsuarios = new List<Usuario>();
 
-        //    using (SqlConnection conn = conexion.ObtenerConexion())
-        //    {
-        //        conn.Open();
-        //        string query = "SELECT id_usuario, nombre_usuario, apellido_usuario, nick_name, contrasena_usuario FROM Usuarios";
+            using (SqlConnection conn = conexion.ObtenerConexion())
+            {
+                conn.Open();
+                string query = "SELECT id_usuario, nombre_usuario, apellido_usuario, nick_name, contrasena_usuario FROM Usuarios";
 
-        //        using (SqlCommand cmd = new SqlCommand(query, conn))
-        //        using (SqlDataReader reader = cmd.ExecuteReader())
-        //        {
-        //            while (reader.Read())
-        //            {
-        //                Usuario usuario = new Usuario
-        //                {
-        //                    IdUsuario = Convert.ToInt32(reader["id_usuario"]),
-        //                    NombreUsuario = reader["nombre_usuario"].ToString(),
-        //                    ApellidoUsuario = reader["apellido_usuario"].ToString(),
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Usuario usuario = new Usuario
+                        {
+                            IdUsuario = Convert.ToInt32(reader["id_usuario"]),
+                            NombreUsuario = reader["nombre_usuario"].ToString(),
+                            ApellidoUsuario = reader["apellido_usuario"].ToString(),
 
-        //                };
+                        };
 
-        //                listaUsuarios.Add(usuario);
-        //            }
-        //        }
-        //    }
+                        listaUsuarios.Add(usuario);
+                    }
+                }
+            }
 
-        //    return listaUsuarios;
-        //}
+            return listaUsuarios;
+        }
 
 
     }
