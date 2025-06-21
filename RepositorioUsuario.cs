@@ -9,8 +9,7 @@ namespace pryVargas_IEFI
 {
     internal class RepositorioUsuario
     {
-        
-        
+    
             private ConexionDB conexion = new ConexionDB();
 
             public void GuardarUsuario(Usuario usuario)

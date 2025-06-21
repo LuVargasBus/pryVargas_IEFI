@@ -115,7 +115,7 @@
             this.btnPersonas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPersonas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPersonas.ForeColor = System.Drawing.Color.White;
-            this.btnPersonas.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
+            this.btnPersonas.IconChar = FontAwesome.Sharp.IconChar.IdCard;
             this.btnPersonas.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnPersonas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnPersonas.IconSize = 58;
@@ -126,6 +126,7 @@
             this.btnPersonas.TabIndex = 2;
             this.btnPersonas.Text = "Personas";
             this.btnPersonas.UseVisualStyleBackColor = false;
+            this.btnPersonas.Click += new System.EventHandler(this.btnPersonas_Click_1);
             // 
             // btnTareas
             // 
@@ -144,6 +145,7 @@
             this.btnTareas.TabIndex = 6;
             this.btnTareas.Text = "Tareas";
             this.btnTareas.UseVisualStyleBackColor = false;
+            this.btnTareas.Click += new System.EventHandler(this.btnTareas_Click);
             // 
             // btnInformes
             // 
@@ -162,6 +164,7 @@
             this.btnInformes.TabIndex = 7;
             this.btnInformes.Text = "Informes";
             this.btnInformes.UseVisualStyleBackColor = false;
+            this.btnInformes.Click += new System.EventHandler(this.btnInformes_Click);
             // 
             // panelBotones
             // 

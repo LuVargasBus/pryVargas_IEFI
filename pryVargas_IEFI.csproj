@@ -99,11 +99,11 @@
     <Compile Include="FormNuevaTarea.Designer.cs">
       <DependentUpon>FormNuevaTarea.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPersonas.cs">
+    <Compile Include="FormNuevoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPersonas.Designer.cs">
-      <DependentUpon>FormPersonas.cs</DependentUpon>
+    <Compile Include="FormNuevoUsuario.Designer.cs">
+      <DependentUpon>FormNuevoUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTareas.cs">
       <SubType>Form</SubType>
@@ -148,11 +148,17 @@
     <EmbeddedResource Include="FormConsultarTarea.resx">
       <DependentUpon>FormConsultarTarea.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormInformes.resx">
+      <DependentUpon>FormInformes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNuevaTarea.resx">
       <DependentUpon>FormNuevaTarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNuevoUsuario.resx">
+      <DependentUpon>FormNuevoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTareas.resx">
       <DependentUpon>FormTareas.cs</DependentUpon>
