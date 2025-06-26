@@ -74,7 +74,7 @@ namespace pryVargas_IEFI
             using (SqlConnection conn = conexion.ObtenerConexion())
             {
                 conn.Open();
-                string query = "SELECT id_usuario, nombre_usuario, apellido_usuario, nick_name, contrasena_usuario FROM Usuarios";
+                string query = "SELECT id_usuario, nombre_usuario, apellido_usuario FROM Usuarios";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 using (SqlDataReader reader = cmd.ExecuteReader())

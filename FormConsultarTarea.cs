@@ -44,9 +44,11 @@ namespace pryVargas_IEFI
 
         private void CargarUsuarios()
         {
+
             cmbFiltroUsuario.DataSource = listaUsuarios;
-            cmbFiltroUsuario.DisplayMember = "NombreCompleto";
             cmbFiltroUsuario.ValueMember = "IdUsuario";
+            cmbFiltroUsuario.DisplayMember = "NombreCompleto";
+           
         }
 
         private void CargarTareas()
@@ -57,6 +59,5 @@ namespace pryVargas_IEFI
             cmbFiltroTarea.ValueMember = "IdTarea";
 
         }
-
     }
 }

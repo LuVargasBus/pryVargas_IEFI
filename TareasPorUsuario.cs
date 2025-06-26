@@ -22,6 +22,6 @@ namespace pryVargas_IEFI
         public string PrioridadTarea { get; set; }
         public DateTime VencimientoTarea { get; set; }
 
-        public string FechaAsignacion { get; set; }
+        public DateTime FechaAsignacion { get; set; }
     }
 }

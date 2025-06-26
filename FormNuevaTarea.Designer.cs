@@ -140,7 +140,7 @@
             this.dataTimeVencimiento.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dataTimeVencimiento.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dataTimeVencimiento.Name = "dataTimeVencimiento";
-            this.dataTimeVencimiento.Size = new System.Drawing.Size(295, 54);
+            this.dataTimeVencimiento.Size = new System.Drawing.Size(329, 54);
             this.dataTimeVencimiento.TabIndex = 25;
             this.dataTimeVencimiento.Value = new System.DateTime(2025, 6, 20, 15, 19, 2, 225);
             // 
@@ -157,6 +157,7 @@
             this.btnGuardar.Size = new System.Drawing.Size(180, 45);
             this.btnGuardar.TabIndex = 26;
             this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FormNuevaTarea
             // 
@@ -176,6 +177,7 @@
             this.Controls.Add(this.txtTarea);
             this.Name = "FormNuevaTarea";
             this.Text = "FormNuevaTarea";
+           
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -17,7 +17,7 @@ namespace pryVargas_IEFI
             using (SqlConnection conn = conexion.ObtenerConexion())
             {
                 conn.Open();
-                string query = "INSERT INTO Tareas (nombre_tarea, categoria_tarea, descripcion_tarea, priorirdad_tarea, vencimiento_tarea) VALUES (@nombre, @categoria, @descripcion, @prioridad, @vencimiento)";
+                string query = "INSERT INTO Tareas (nombre_tarea, categoria_tarea, descripcion_tarea, prioridad_tarea, vencimiento_tarea) VALUES (@nombre, @categoria, @descripcion, @prioridad, @vencimiento)";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@nombre", tareas.NombreTarea);

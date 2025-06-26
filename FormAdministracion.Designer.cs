@@ -54,14 +54,14 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(906, 106);
+            this.panel2.Size = new System.Drawing.Size(906, 160);
             this.panel2.TabIndex = 1;
             // 
             // lblHome
             // 
             this.lblHome.AutoSize = true;
             this.lblHome.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblHome.Location = new System.Drawing.Point(73, 47);
+            this.lblHome.Location = new System.Drawing.Point(77, 77);
             this.lblHome.Name = "lblHome";
             this.lblHome.Size = new System.Drawing.Size(44, 16);
             this.lblHome.TabIndex = 1;
@@ -75,7 +75,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.Color.DeepPink;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 35;
-            this.iconPictureBox1.Location = new System.Drawing.Point(26, 37);
+            this.iconPictureBox1.Location = new System.Drawing.Point(30, 67);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(41, 35);
             this.iconPictureBox1.TabIndex = 0;
@@ -85,9 +85,9 @@
             // 
             this.panelEscritorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panelEscritorio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEscritorio.Location = new System.Drawing.Point(200, 106);
+            this.panelEscritorio.Location = new System.Drawing.Point(200, 160);
             this.panelEscritorio.Name = "panelEscritorio";
-            this.panelEscritorio.Size = new System.Drawing.Size(906, 523);
+            this.panelEscritorio.Size = new System.Drawing.Size(906, 469);
             this.panelEscritorio.TabIndex = 2;
             // 
             // panelPicture

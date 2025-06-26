@@ -38,19 +38,21 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 56);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(45, 84);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 21);
+            this.label2.Size = new System.Drawing.Size(62, 24);
             this.label2.TabIndex = 10;
             this.label2.Text = "Tarea";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 149);
+            this.label1.Location = new System.Drawing.Point(536, 92);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 16);
+            this.label1.Size = new System.Drawing.Size(77, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "Usuario";
             // 
@@ -60,13 +62,15 @@
             this.btnAsignar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAsignar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAsignar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAsignar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAsignar.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAsignar.ForeColor = System.Drawing.Color.White;
-            this.btnAsignar.Location = new System.Drawing.Point(152, 261);
+            this.btnAsignar.Location = new System.Drawing.Point(753, 236);
+            this.btnAsignar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAsignar.Name = "btnAsignar";
-            this.btnAsignar.Size = new System.Drawing.Size(180, 45);
+            this.btnAsignar.Size = new System.Drawing.Size(173, 68);
             this.btnAsignar.TabIndex = 11;
             this.btnAsignar.Text = "Asignar";
+            this.btnAsignar.Click += new System.EventHandler(this.btnAsignar_Click_1);
             // 
             // cmbTareaUsuario
             // 
@@ -78,9 +82,10 @@
             this.cmbTareaUsuario.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbTareaUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbTareaUsuario.ItemHeight = 30;
-            this.cmbTareaUsuario.Location = new System.Drawing.Point(37, 94);
+            this.cmbTareaUsuario.Location = new System.Drawing.Point(51, 141);
+            this.cmbTareaUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.cmbTareaUsuario.Name = "cmbTareaUsuario";
-            this.cmbTareaUsuario.Size = new System.Drawing.Size(295, 36);
+            this.cmbTareaUsuario.Size = new System.Drawing.Size(404, 36);
             this.cmbTareaUsuario.TabIndex = 12;
             // 
             // cmbUsuario
@@ -93,21 +98,24 @@
             this.cmbUsuario.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbUsuario.ItemHeight = 30;
-            this.cmbUsuario.Location = new System.Drawing.Point(37, 183);
+            this.cmbUsuario.Location = new System.Drawing.Point(522, 141);
+            this.cmbUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.cmbUsuario.Name = "cmbUsuario";
-            this.cmbUsuario.Size = new System.Drawing.Size(295, 36);
+            this.cmbUsuario.Size = new System.Drawing.Size(404, 36);
             this.cmbUsuario.TabIndex = 13;
             // 
             // FormAsignarTarea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 376);
+            this.ClientSize = new System.Drawing.Size(1008, 369);
             this.Controls.Add(this.cmbUsuario);
             this.Controls.Add(this.cmbTareaUsuario);
             this.Controls.Add(this.btnAsignar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAsignarTarea";
             this.Text = "FormAsignarTarea";
             this.Load += new System.EventHandler(this.FormAsignarTarea_Load);

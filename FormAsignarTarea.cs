@@ -24,16 +24,34 @@ namespace pryVargas_IEFI
             InitializeComponent();
             listaUsuarios = repoUsuario.obtenerTodosLosUsuarios();
             listaTareas = repoTarea.obtenerTodasLasTareas();
+            listaTareasPorUsuario = repoTareaUsuario.obtenerTareasPorUsuario();
         }
 
         private void FormAsignarTarea_Load(object sender, EventArgs e)
         {
             CargarUsuarios();
             CargarTareas();
+           
 
         }
 
-        private void btnAsignar_Click(object sender, EventArgs e)
+   
+        private void CargarUsuarios()
+        {
+            cmbUsuario.DataSource = listaUsuarios;
+            cmbUsuario.ValueMember = "IdUsuario";
+            cmbUsuario.DisplayMember = "NombreCompleto";
+        }
+
+        private void CargarTareas()
+        {
+            cmbTareaUsuario.DataSource = listaTareas;
+            cmbTareaUsuario.DisplayMember = "NombreTarea";
+            cmbTareaUsuario.ValueMember = "IdTarea";
+
+        }
+
+        private void btnAsignar_Click_1(object sender, EventArgs e)
         {
             string tarea = cmbTareaUsuario.Text;
             string usuario = cmbUsuario.Text;
@@ -45,24 +63,5 @@ namespace pryVargas_IEFI
             MessageBox.Show($"Tarea: {tarea}" + "  " + $"asignada a: {usuario}");
             repoTareaUsuario.Asignar(usuarioSeleccionado, tareaSeleccionada);
         }
-
-        private void CargarUsuarios()
-        {
-
-            cmbUsuario.DataSource = listaUsuarios;
-            cmbUsuario.DisplayMember = "NombreCompleto";
-            cmbUsuario.ValueMember = "IdUsuario";
-
-      
-        }
-
-        private void CargarTareas()
-        {
-            cmbTareaUsuario.DataSource = listaTareas;
-            cmbTareaUsuario.DisplayMember = "NombreTarea";
-            cmbTareaUsuario.ValueMember = "IdTarea";
-
-        }
-
     }
 }

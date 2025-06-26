@@ -41,16 +41,6 @@
             this.cmbFiltroTarea = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dgvPanelTareas = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApellidoUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdTarea = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreTarea = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CategoriaTarea = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DescripcionTarea = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrioridadTarea = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VencimientoTarea = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaAsignacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnBuscar = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPanelTareas)).BeginInit();
             this.SuspendLayout();
@@ -77,6 +67,10 @@
             // cmbPrioridad
             // 
             this.cmbPrioridad.FormattingEnabled = true;
+            this.cmbPrioridad.Items.AddRange(new object[] {
+            "Alta ",
+            "Media",
+            "Baja"});
             this.cmbPrioridad.Location = new System.Drawing.Point(30, 142);
             this.cmbPrioridad.Name = "cmbPrioridad";
             this.cmbPrioridad.Size = new System.Drawing.Size(255, 24);
@@ -99,7 +93,6 @@
             this.label4.Size = new System.Drawing.Size(54, 16);
             this.label4.TabIndex = 10;
             this.label4.Text = "Usuario";
-        
             // 
             // label3
             // 
@@ -117,7 +110,6 @@
             this.cmbFiltroUsuario.Name = "cmbFiltroUsuario";
             this.cmbFiltroUsuario.Size = new System.Drawing.Size(255, 24);
             this.cmbFiltroUsuario.TabIndex = 4;
-          
             // 
             // cmbFiltroTarea
             // 
@@ -146,18 +138,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvPanelTareas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvPanelTareas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPanelTareas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdUsuario,
-            this.nombreUsuario,
-            this.ApellidoUsuario,
-            this.IdTarea,
-            this.NombreTarea,
-            this.CategoriaTarea,
-            this.DescripcionTarea,
-            this.PrioridadTarea,
-            this.VencimientoTarea,
-            this.FechaAsignacion});
+            this.dgvPanelTareas.ColumnHeadersHeight = 34;
+            this.dgvPanelTareas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -185,7 +167,7 @@
             this.dgvPanelTareas.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvPanelTareas.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvPanelTareas.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvPanelTareas.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPanelTareas.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvPanelTareas.ThemeStyle.HeaderStyle.Height = 34;
             this.dgvPanelTareas.ThemeStyle.ReadOnly = false;
             this.dgvPanelTareas.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -195,66 +177,6 @@
             this.dgvPanelTareas.ThemeStyle.RowsStyle.Height = 24;
             this.dgvPanelTareas.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvPanelTareas.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // IdUsuario
-            // 
-            this.IdUsuario.HeaderText = "Id Usuario";
-            this.IdUsuario.MinimumWidth = 6;
-            this.IdUsuario.Name = "IdUsuario";
-            // 
-            // nombreUsuario
-            // 
-            this.nombreUsuario.HeaderText = "Nombre Usuario";
-            this.nombreUsuario.MinimumWidth = 6;
-            this.nombreUsuario.Name = "nombreUsuario";
-            // 
-            // ApellidoUsuario
-            // 
-            this.ApellidoUsuario.HeaderText = "ApellidoUsuario";
-            this.ApellidoUsuario.MinimumWidth = 6;
-            this.ApellidoUsuario.Name = "ApellidoUsuario";
-            // 
-            // IdTarea
-            // 
-            this.IdTarea.HeaderText = "Id Tarea";
-            this.IdTarea.MinimumWidth = 6;
-            this.IdTarea.Name = "IdTarea";
-            // 
-            // NombreTarea
-            // 
-            this.NombreTarea.HeaderText = "Nombre Tarea";
-            this.NombreTarea.MinimumWidth = 6;
-            this.NombreTarea.Name = "NombreTarea";
-            // 
-            // CategoriaTarea
-            // 
-            this.CategoriaTarea.HeaderText = "Categoría Tarea";
-            this.CategoriaTarea.MinimumWidth = 6;
-            this.CategoriaTarea.Name = "CategoriaTarea";
-            // 
-            // DescripcionTarea
-            // 
-            this.DescripcionTarea.HeaderText = "Descripción Tarea";
-            this.DescripcionTarea.MinimumWidth = 6;
-            this.DescripcionTarea.Name = "DescripcionTarea";
-            // 
-            // PrioridadTarea
-            // 
-            this.PrioridadTarea.HeaderText = "Prioridad Tarea";
-            this.PrioridadTarea.MinimumWidth = 6;
-            this.PrioridadTarea.Name = "PrioridadTarea";
-            // 
-            // VencimientoTarea
-            // 
-            this.VencimientoTarea.HeaderText = "Vencimiento Tarea";
-            this.VencimientoTarea.MinimumWidth = 6;
-            this.VencimientoTarea.Name = "VencimientoTarea";
-            // 
-            // FechaAsignacion
-            // 
-            this.FechaAsignacion.HeaderText = "Fecha Asignación";
-            this.FechaAsignacion.MinimumWidth = 6;
-            this.FechaAsignacion.Name = "FechaAsignacion";
             // 
             // btnBuscar
             // 
@@ -307,16 +229,6 @@
         private System.Windows.Forms.ComboBox cmbFiltroTarea;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private Guna.UI2.WinForms.Guna2DataGridView dgvPanelTareas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreUsuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ApellidoUsuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdTarea;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreTarea;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CategoriaTarea;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DescripcionTarea;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PrioridadTarea;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VencimientoTarea;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaAsignacion;
         private Guna.UI2.WinForms.Guna2Button btnBuscar;
     }
 }

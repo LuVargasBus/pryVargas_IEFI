@@ -17,5 +17,7 @@ namespace pryVargas_IEFI
         public string ImagenUsuario { get; set; }
         public string  RolUsuario {  get; set; }
 
+
+        public string NombreCompleto => NombreUsuario + " " + ApellidoUsuario;
     }
 }

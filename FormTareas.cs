@@ -38,25 +38,25 @@ namespace pryVargas_IEFI
 
             formHijo.BringToFront();
             formHijo.Show();
-            //lblHome.Text = formHijo.Text;
+     
 
 
 
         }
 
-        private void btnCrearTraea_Click(object sender, EventArgs e)
+        private void btnCrearTareas_Click(object sender, EventArgs e)
         {
             AbrirFormularioTareasEnPanel(new FormNuevaTarea());
         }
 
-        private void btnConsultarTarea_Click(object sender, EventArgs e)
-        {
-            AbrirFormularioTareasEnPanel(new FormConsultarTarea());
-        }
-
-        private void btnAsignarTarea_Click(object sender, EventArgs e)
+        private void btnAsignarTarea_Click_1(object sender, EventArgs e)
         {
             AbrirFormularioTareasEnPanel(new FormAsignarTarea());
+        }
+
+        private void btnConsultarTareas_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioTareasEnPanel(new FormConsultarTarea());
         }
     }
 }
