@@ -36,6 +36,7 @@ namespace pryVargas_IEFI
                     RolUsuario = cmbRol.Text,
                     ContrasenaUsuario = txtContraseña.Text,
                     NickName = txtNickname.Text,
+                    ImagenUsuario = " "
 
                 };
                 repositorioUsuario.GuardarUsuario(nuevoUsuario);
