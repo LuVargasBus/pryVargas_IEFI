@@ -31,7 +31,6 @@ namespace pryVargas_IEFI
         {
             CargarUsuarios();
             CargarTareas();
-           
 
         }
 

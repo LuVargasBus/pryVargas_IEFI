@@ -25,24 +25,23 @@ namespace pryVargas_IEFI
         }
 
         private Form formularioActual = null;
-        private void AbrirFormularioEnPanel(Form formHijo )
+        private void AbrirFormularioEnPanel(Form formHijo)
         {
-            if (formularioActual != null && formularioActual.GetType() == formHijo.GetType())
-                return;
+            if (formularioActual != null)
+                formularioActual.Close();
+
             formularioActual = formHijo;
-            panelEscritorio.Controls.Clear();
             formHijo.TopLevel = false;
             formHijo.FormBorderStyle = FormBorderStyle.None;
             formHijo.Dock = DockStyle.Fill;
-            panelEscritorio.Controls.Add(formHijo);
-            panelEscritorio.Tag = formHijo;
-           
+
+            panelContenedorHijos.Controls.Clear();
+            panelContenedorHijos.Controls.Add(formHijo);
+            panelContenedorHijos.Tag = formHijo;
+
             formHijo.BringToFront();
             formHijo.Show();
-            lblHome.Text = formHijo.Text;
-
-
-
+            lblHomee.Text = formHijo.Text;
         }
         private void btnPersonas_Click_1(object sender, EventArgs e)
         {
@@ -57,6 +56,11 @@ namespace pryVargas_IEFI
         private void btnInformes_Click(object sender, EventArgs e)
         {
             AbrirFormularioEnPanel(new FormInformes());
+        }
+
+        private void lblHomee_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

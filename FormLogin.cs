@@ -44,7 +44,7 @@ namespace pryVargas_IEFI
             }
             else if (usuario.RolUsuario == "usuario")
             {
-                FormUsuario userForm = new FormUsuario();
+                FormUsuario userForm = new FormUsuario(usuario);
                 userForm.IdSesion = idSesion;
                 userForm.Show();
             }
@@ -58,6 +58,16 @@ namespace pryVargas_IEFI
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }
