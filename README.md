@@ -1,9 +1,9 @@
-# pryVargas_IEFI
-# 🏛️ Sistema de gestión
+pryVargas_IEFI
+# Sistema de gestión
 
 Este proyecto es una aplicación desarrollada en C# con Windows Forms (.NET Framework)
 
-## 🚀 Funcionalidades principales
+# Funcionalidades principales
 
 - **Inicio de sesión por usuario** con registro automático de sesiones.
 - Gestión de **solicitudes por usuario** (visualización y creación).
@@ -12,30 +12,30 @@ Este proyecto es una aplicación desarrollada en C# con Windows Forms (.NET Fram
 - Visualización de métricas en **gráficas y tablas dinámicas**.
 - Interfaces amigables con visibilidad dinámica de componentes.
 
-## 🧩 Estructura del sistema
+# Estructura del sistema
 
-### 🧑 Usuarios
+# Usuarios
 - Registro de datos: nombre, apellido, rol, imagen, contraseña.
 
 
-### 📋 Solicitudes
+# Solicitudes
 - Cada usuario puede generar solicitudes.
 - Se almacenan en una tabla única: `Solicitudes_Usuario`.
 
-### 🕓 Sesiones
+# Sesiones
 - Se registra automáticamente el `inicio` y `fin` de sesión.
 - El tiempo total se muestra en un gráfico de barras.
 
-### ✅ Tareas
+# Tareas
 - Relación de usuarios con tareas (`Tareas_Usuario`).
 - Visualización de progreso con barras por usuario (finalizadas vs. totales).
 
-## 📊 Informes
+# Informes
 - **Grilla** para solicitudes (DataGridView).
 - **Gráfico de barras** para tiempo en la aplicación (Chart).
 - **Barra de progreso** individual por usuario para tareas finalizadas.
 
-## 💻 Tecnologías utilizadas
+# Tecnologías utilizadas
 
 - Lenguaje: C# (WinForms)
 - Base de datos: SQL Server
