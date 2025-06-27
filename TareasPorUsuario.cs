@@ -23,5 +23,7 @@ namespace pryVargas_IEFI
         public DateTime VencimientoTarea { get; set; }
 
         public DateTime FechaAsignacion { get; set; }
+        public string EstadoTarea { get; set; }
+
     }
 }

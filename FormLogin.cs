@@ -21,7 +21,20 @@ namespace pryVargas_IEFI
             InitializeComponent();
         }
 
-        private void btnIngresar_Click(object sender, EventArgs e)
+       
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void btnIngresar_Click_1(object sender, EventArgs e)
         {
             string nickname = txtNombreUsuario.Text;
             string contrasena = txtContrasena.Text;
@@ -39,7 +52,7 @@ namespace pryVargas_IEFI
             if (usuario.RolUsuario == "admin")
             {
                 FormAdministracion adminForm = new FormAdministracion();
-               
+
                 adminForm.Show();
             }
             else if (usuario.RolUsuario == "usuario")
@@ -53,23 +66,6 @@ namespace pryVargas_IEFI
                 MessageBox.Show("Rol desconocido.");
                 return;
             }
-
-           
-        }
-
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
         }
     }
 }

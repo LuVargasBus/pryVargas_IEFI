@@ -35,6 +35,9 @@
             this.cmbPrioridadTarea = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dgvTareaUsuario = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.cmbEstadoTarea = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.btnGuardarCambios = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTareaUsuario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,6 +76,7 @@
             // 
             // dgvTareaUsuario
             // 
+            this.dgvTareaUsuario.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvTareaUsuario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTareaUsuario.BackgroundColor = System.Drawing.Color.Gainsboro;
@@ -100,7 +104,7 @@
             this.dgvTareaUsuario.RowHeadersVisible = false;
             this.dgvTareaUsuario.RowHeadersWidth = 51;
             this.dgvTareaUsuario.RowTemplate.Height = 24;
-            this.dgvTareaUsuario.Size = new System.Drawing.Size(721, 255);
+            this.dgvTareaUsuario.Size = new System.Drawing.Size(946, 255);
             this.dgvTareaUsuario.TabIndex = 17;
             this.dgvTareaUsuario.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvTareaUsuario.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -134,12 +138,65 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Prioridad de tarea";
             // 
+            // cmbEstadoTarea
+            // 
+            this.cmbEstadoTarea.AutoRoundedCorners = true;
+            this.cmbEstadoTarea.BackColor = System.Drawing.Color.Transparent;
+            this.cmbEstadoTarea.BorderColor = System.Drawing.Color.Indigo;
+            this.cmbEstadoTarea.BorderRadius = 17;
+            this.cmbEstadoTarea.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbEstadoTarea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEstadoTarea.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbEstadoTarea.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbEstadoTarea.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.cmbEstadoTarea.ForeColor = System.Drawing.Color.Indigo;
+            this.cmbEstadoTarea.ItemHeight = 30;
+            this.cmbEstadoTarea.Items.AddRange(new object[] {
+            "Alta",
+            "Media",
+            "Baja"});
+            this.cmbEstadoTarea.Location = new System.Drawing.Point(412, 97);
+            this.cmbEstadoTarea.Name = "cmbEstadoTarea";
+            this.cmbEstadoTarea.Size = new System.Drawing.Size(325, 36);
+            this.cmbEstadoTarea.TabIndex = 19;
+            this.cmbEstadoTarea.SelectedIndexChanged += new System.EventHandler(this.cmbEstadoTarea_SelectedIndexChanged);
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Location = new System.Drawing.Point(408, 57);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(88, 30);
+            this.lblEstado.TabIndex = 20;
+            this.lblEstado.Text = "Estado";
+            // 
+            // btnGuardarCambios
+            // 
+            this.btnGuardarCambios.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuardarCambios.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuardarCambios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGuardarCambios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGuardarCambios.FillColor = System.Drawing.Color.Indigo;
+            this.btnGuardarCambios.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarCambios.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarCambios.Location = new System.Drawing.Point(811, 525);
+            this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardarCambios.Name = "btnGuardarCambios";
+            this.btnGuardarCambios.Size = new System.Drawing.Size(173, 68);
+            this.btnGuardarCambios.TabIndex = 21;
+            this.btnGuardarCambios.Text = "Asignar";
+            this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click);
+            // 
             // FormTareasUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(797, 525);
+            this.ClientSize = new System.Drawing.Size(1025, 623);
+            this.Controls.Add(this.btnGuardarCambios);
+            this.Controls.Add(this.lblEstado);
+            this.Controls.Add(this.cmbEstadoTarea);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvTareaUsuario);
             this.Controls.Add(this.cmbPrioridadTarea);
@@ -158,5 +215,8 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbPrioridadTarea;
         private Guna.UI2.WinForms.Guna2DataGridView dgvTareaUsuario;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbEstadoTarea;
+        private System.Windows.Forms.Label lblEstado;
+        private Guna.UI2.WinForms.Guna2Button btnGuardarCambios;
     }
 }

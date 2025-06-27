@@ -17,7 +17,7 @@ namespace pryVargas_IEFI
             using (SqlConnection conn = conexion.ObtenerConexion())
             {
                 conn.Open();
-                string query = "INSERT INTO Tareas (nombre_tarea, categoria_tarea, descripcion_tarea, prioridad_tarea, vencimiento_tarea) VALUES (@nombre, @categoria, @descripcion, @prioridad, @vencimiento)";
+                string query = "INSERT INTO Tareas (nombre_tarea, categoria_tarea, descripcion_tarea, prioridad_tarea, vencimiento_tarea, estado_tarea) VALUES (@nombre, @categoria, @descripcion, @prioridad, @vencimiento, @estado)";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@nombre", tareas.NombreTarea);
@@ -25,6 +25,7 @@ namespace pryVargas_IEFI
                     cmd.Parameters.AddWithValue("@descripcion", tareas.DescripcionTarea);
                     cmd.Parameters.AddWithValue("@prioridad", tareas.PrioridadTarea);
                     cmd.Parameters.AddWithValue("@vencimiento", tareas.VencimientoTarea);
+                    cmd.Parameters.AddWithValue("@estado", tareas.EstadoTarea);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -39,7 +40,7 @@ namespace pryVargas_IEFI
             using (SqlConnection conn = conexion.ObtenerConexion())
             {
                 conn.Open();
-                string query = "SELECT id_Tarea, nombre_Tarea FROM Tareas";
+                string query = "SELECT id_Tarea, nombre_Tarea, estado_tarea FROM Tareas";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 using (SqlDataReader reader = cmd.ExecuteReader())
@@ -50,6 +51,7 @@ namespace pryVargas_IEFI
                         {
                             IdTarea = Convert.ToInt32(reader["id_tarea"]),
                             NombreTarea = reader["nombre_tarea"].ToString(),
+                            EstadoTarea = reader["estado_tarea"].ToString()
 
                         };
 

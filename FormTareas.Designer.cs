@@ -49,36 +49,40 @@
             // 
             // btnConsultarTareas
             // 
+            this.btnConsultarTareas.BackColor = System.Drawing.Color.Transparent;
             this.btnConsultarTareas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnConsultarTareas.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultarTareas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnConsultarTareas.IconChar = FontAwesome.Sharp.IconChar.FileContract;
             this.btnConsultarTareas.IconColor = System.Drawing.Color.DeepPink;
             this.btnConsultarTareas.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnConsultarTareas.IconSize = 70;
             this.btnConsultarTareas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultarTareas.Location = new System.Drawing.Point(777, 29);
+            this.btnConsultarTareas.Location = new System.Drawing.Point(728, 243);
             this.btnConsultarTareas.Name = "btnConsultarTareas";
-            this.btnConsultarTareas.Size = new System.Drawing.Size(257, 112);
+            this.btnConsultarTareas.Size = new System.Drawing.Size(292, 107);
             this.btnConsultarTareas.TabIndex = 11;
             this.btnConsultarTareas.Text = "Consultar tareas";
-            this.btnConsultarTareas.UseVisualStyleBackColor = true;
+            this.btnConsultarTareas.UseVisualStyleBackColor = false;
             this.btnConsultarTareas.Click += new System.EventHandler(this.btnConsultarTareas_Click);
             // 
             // btnAsignarTarea
             // 
+            this.btnAsignarTarea.BackColor = System.Drawing.Color.Transparent;
             this.btnAsignarTarea.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAsignarTarea.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAsignarTarea.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAsignarTarea.IconChar = FontAwesome.Sharp.IconChar.PersonChalkboard;
             this.btnAsignarTarea.IconColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAsignarTarea.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnAsignarTarea.IconSize = 70;
             this.btnAsignarTarea.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAsignarTarea.Location = new System.Drawing.Point(421, 29);
+            this.btnAsignarTarea.Location = new System.Drawing.Point(389, 243);
             this.btnAsignarTarea.Name = "btnAsignarTarea";
-            this.btnAsignarTarea.Size = new System.Drawing.Size(248, 112);
+            this.btnAsignarTarea.Size = new System.Drawing.Size(292, 107);
             this.btnAsignarTarea.TabIndex = 10;
             this.btnAsignarTarea.Text = "Asignar Tarea";
-            this.btnAsignarTarea.UseVisualStyleBackColor = true;
+            this.btnAsignarTarea.UseVisualStyleBackColor = false;
             this.btnAsignarTarea.Click += new System.EventHandler(this.btnAsignarTarea_Click_1);
             // 
             // btnCrearTareas
@@ -90,10 +94,11 @@
             this.btnCrearTareas.IconChar = FontAwesome.Sharp.IconChar.FilePen;
             this.btnCrearTareas.IconColor = System.Drawing.Color.Gold;
             this.btnCrearTareas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCrearTareas.IconSize = 70;
             this.btnCrearTareas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrearTareas.Location = new System.Drawing.Point(51, 29);
+            this.btnCrearTareas.Location = new System.Drawing.Point(60, 243);
             this.btnCrearTareas.Name = "btnCrearTareas";
-            this.btnCrearTareas.Size = new System.Drawing.Size(238, 112);
+            this.btnCrearTareas.Size = new System.Drawing.Size(292, 107);
             this.btnCrearTareas.TabIndex = 9;
             this.btnCrearTareas.Text = "Crear tarea";
             this.btnCrearTareas.UseVisualStyleBackColor = false;
@@ -101,9 +106,8 @@
             // 
             // guna2CustomGradientPanel1
             // 
-            this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.Controls.Add(this.btnConsultarTareas);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnAsignarTarea);
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnConsultarTareas);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnCrearTareas);
             this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.MidnightBlue;
@@ -112,7 +116,7 @@
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Purple;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1071, 159);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1071, 669);
             this.guna2CustomGradientPanel1.TabIndex = 12;
             // 
             // FormTareas

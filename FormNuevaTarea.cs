@@ -28,7 +28,9 @@ namespace pryVargas_IEFI
                     CategoriaTarea = txtCategoria.Text,
                     DescripcionTarea = txtDescripcion.Text,
                     PrioridadTarea = cmbPrioridadTarea.Text,
-                    VencimientoTarea = DateTime.Parse(dataTimeVencimiento.Text)
+                    VencimientoTarea = DateTime.Parse(dataTimeVencimiento.Text),
+                    EstadoTarea = "Pendiente"
+
 
                 };
 
@@ -42,7 +44,10 @@ namespace pryVargas_IEFI
             }
         }
 
-     
+        private void FormNuevaTarea_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

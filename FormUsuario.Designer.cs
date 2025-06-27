@@ -32,11 +32,11 @@
             this.lblNickname = new System.Windows.Forms.Label();
             this.picBoxUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panelUser = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.lblSaludo = new System.Windows.Forms.Label();
             this.btnSolicitudes = new FontAwesome.Sharp.IconButton();
             this.btnVerTareas = new FontAwesome.Sharp.IconButton();
+            this.btnEditarPerfil = new FontAwesome.Sharp.IconButton();
             this.panelUsuario = new System.Windows.Forms.Panel();
-            this.btnEdiatrPerfil = new FontAwesome.Sharp.IconButton();
-            this.lblSaludo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUser)).BeginInit();
             this.panelUser.SuspendLayout();
             this.SuspendLayout();
@@ -73,15 +73,27 @@
             this.panelUser.Controls.Add(this.btnVerTareas);
             this.panelUser.Controls.Add(this.lblNickname);
             this.panelUser.Controls.Add(this.picBoxUser);
-            this.panelUser.Controls.Add(this.btnEdiatrPerfil);
+            this.panelUser.Controls.Add(this.btnEditarPerfil);
             this.panelUser.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelUser.FillColor = System.Drawing.Color.MidnightBlue;
             this.panelUser.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panelUser.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.panelUser.Location = new System.Drawing.Point(0, 0);
             this.panelUser.Name = "panelUser";
-            this.panelUser.Size = new System.Drawing.Size(259, 631);
+            this.panelUser.Size = new System.Drawing.Size(326, 801);
             this.panelUser.TabIndex = 15;
+            // 
+            // lblSaludo
+            // 
+            this.lblSaludo.AutoSize = true;
+            this.lblSaludo.BackColor = System.Drawing.Color.Transparent;
+            this.lblSaludo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaludo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblSaludo.Location = new System.Drawing.Point(45, 38);
+            this.lblSaludo.Name = "lblSaludo";
+            this.lblSaludo.Size = new System.Drawing.Size(61, 24);
+            this.lblSaludo.TabIndex = 18;
+            this.lblSaludo.Text = "Hola,";
             // 
             // btnSolicitudes
             // 
@@ -95,7 +107,7 @@
             this.btnSolicitudes.IconColor = System.Drawing.Color.SpringGreen;
             this.btnSolicitudes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSolicitudes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSolicitudes.Location = new System.Drawing.Point(12, 509);
+            this.btnSolicitudes.Location = new System.Drawing.Point(31, 630);
             this.btnSolicitudes.Name = "btnSolicitudes";
             this.btnSolicitudes.Size = new System.Drawing.Size(231, 110);
             this.btnSolicitudes.TabIndex = 17;
@@ -115,7 +127,7 @@
             this.btnVerTareas.IconColor = System.Drawing.Color.DeepSkyBlue;
             this.btnVerTareas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnVerTareas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerTareas.Location = new System.Drawing.Point(12, 390);
+            this.btnVerTareas.Location = new System.Drawing.Point(31, 485);
             this.btnVerTareas.Name = "btnVerTareas";
             this.btnVerTareas.Padding = new System.Windows.Forms.Padding(0, 20, 25, 0);
             this.btnVerTareas.Size = new System.Drawing.Size(231, 105);
@@ -125,56 +137,44 @@
             this.btnVerTareas.UseVisualStyleBackColor = false;
             this.btnVerTareas.Click += new System.EventHandler(this.btnVerTareas_Click);
             // 
+            // btnEditarPerfil
+            // 
+            this.btnEditarPerfil.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEditarPerfil.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditarPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnEditarPerfil.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnEditarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEditarPerfil.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarPerfil.ForeColor = System.Drawing.Color.Transparent;
+            this.btnEditarPerfil.IconChar = FontAwesome.Sharp.IconChar.Odysee;
+            this.btnEditarPerfil.IconColor = System.Drawing.Color.DeepPink;
+            this.btnEditarPerfil.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEditarPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditarPerfil.Location = new System.Drawing.Point(31, 353);
+            this.btnEditarPerfil.Name = "btnEditarPerfil";
+            this.btnEditarPerfil.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.btnEditarPerfil.Size = new System.Drawing.Size(231, 110);
+            this.btnEditarPerfil.TabIndex = 15;
+            this.btnEditarPerfil.Text = "Editar perfil";
+            this.btnEditarPerfil.UseVisualStyleBackColor = false;
+            // 
             // panelUsuario
             // 
             this.panelUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelUsuario.Location = new System.Drawing.Point(259, 0);
+            this.panelUsuario.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.panelUsuario.Location = new System.Drawing.Point(326, 0);
             this.panelUsuario.Name = "panelUsuario";
-            this.panelUsuario.Size = new System.Drawing.Size(830, 631);
+            this.panelUsuario.Size = new System.Drawing.Size(1040, 801);
             this.panelUsuario.TabIndex = 16;
-            // 
-            // btnEdiatrPerfil
-            // 
-            this.btnEdiatrPerfil.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnEdiatrPerfil.BackColor = System.Drawing.Color.Transparent;
-            this.btnEdiatrPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEdiatrPerfil.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnEdiatrPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEdiatrPerfil.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdiatrPerfil.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEdiatrPerfil.IconChar = FontAwesome.Sharp.IconChar.Odysee;
-            this.btnEdiatrPerfil.IconColor = System.Drawing.Color.DeepPink;
-            this.btnEdiatrPerfil.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEdiatrPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdiatrPerfil.Location = new System.Drawing.Point(12, 274);
-            this.btnEdiatrPerfil.Name = "btnEdiatrPerfil";
-            this.btnEdiatrPerfil.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.btnEdiatrPerfil.Size = new System.Drawing.Size(231, 110);
-            this.btnEdiatrPerfil.TabIndex = 15;
-            this.btnEdiatrPerfil.Text = "Editar perfil";
-            this.btnEdiatrPerfil.UseVisualStyleBackColor = false;
-            this.btnEdiatrPerfil.Click += new System.EventHandler(this.btnEdiatrPerfil_Click);
-            // 
-            // lblSaludo
-            // 
-            this.lblSaludo.AutoSize = true;
-            this.lblSaludo.BackColor = System.Drawing.Color.Transparent;
-            this.lblSaludo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaludo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblSaludo.Location = new System.Drawing.Point(45, 38);
-            this.lblSaludo.Name = "lblSaludo";
-            this.lblSaludo.Size = new System.Drawing.Size(61, 24);
-            this.lblSaludo.TabIndex = 18;
-            this.lblSaludo.Text = "Hola,";
             // 
             // FormUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1089, 631);
+            this.ClientSize = new System.Drawing.Size(1366, 801);
             this.Controls.Add(this.panelUsuario);
             this.Controls.Add(this.panelUser);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormUsuario";
             this.Text = "Mi perfil";
@@ -194,6 +194,6 @@
         private FontAwesome.Sharp.IconButton btnSolicitudes;
         private System.Windows.Forms.Panel panelUsuario;
         private System.Windows.Forms.Label lblSaludo;
-        private FontAwesome.Sharp.IconButton btnEdiatrPerfil;
+        private FontAwesome.Sharp.IconButton btnEditarPerfil;
     }
 }

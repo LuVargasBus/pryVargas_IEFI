@@ -28,102 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelControlInformes = new System.Windows.Forms.Panel();
-            this.panelInformes = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnTiempoApp = new FontAwesome.Sharp.IconButton();
             this.btnTareasTerminadas = new FontAwesome.Sharp.IconButton();
+            this.panelInformes = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.btnPersonas = new FontAwesome.Sharp.IconButton();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.panelControlInformes.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.btnTiempoApp = new FontAwesome.Sharp.IconButton();
+            this.panelInformes.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panelControlInformes
-            // 
-            this.panelControlInformes.Controls.Add(this.btnPersonas);
-            this.panelControlInformes.Controls.Add(this.btnTareasTerminadas);
-            this.panelControlInformes.Controls.Add(this.btnTiempoApp);
-            this.panelControlInformes.Controls.Add(this.panel4);
-            this.panelControlInformes.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelControlInformes.Location = new System.Drawing.Point(0, 0);
-            this.panelControlInformes.Name = "panelControlInformes";
-            this.panelControlInformes.Size = new System.Drawing.Size(200, 535);
-            this.panelControlInformes.TabIndex = 0;
-            // 
-            // panelInformes
-            // 
-            this.panelInformes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelInformes.Location = new System.Drawing.Point(200, 0);
-            this.panelInformes.Name = "panelInformes";
-            this.panelInformes.Size = new System.Drawing.Size(844, 535);
-            this.panelInformes.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.iconPictureBox1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 100);
-            this.panel4.TabIndex = 0;
-            // 
-            // btnTiempoApp
-            // 
-            this.btnTiempoApp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTiempoApp.IconChar = FontAwesome.Sharp.IconChar.ClockFour;
-            this.btnTiempoApp.IconColor = System.Drawing.Color.Black;
-            this.btnTiempoApp.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnTiempoApp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTiempoApp.Location = new System.Drawing.Point(0, 100);
-            this.btnTiempoApp.Name = "btnTiempoApp";
-            this.btnTiempoApp.Size = new System.Drawing.Size(200, 101);
-            this.btnTiempoApp.TabIndex = 1;
-            this.btnTiempoApp.Text = "Tiempo en la APP";
-            this.btnTiempoApp.UseVisualStyleBackColor = true;
             // 
             // btnTareasTerminadas
             // 
-            this.btnTareasTerminadas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTareasTerminadas.BackColor = System.Drawing.Color.Transparent;
+            this.btnTareasTerminadas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnTareasTerminadas.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTareasTerminadas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnTareasTerminadas.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck;
-            this.btnTareasTerminadas.IconColor = System.Drawing.Color.Black;
+            this.btnTareasTerminadas.IconColor = System.Drawing.Color.Gold;
             this.btnTareasTerminadas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTareasTerminadas.IconSize = 70;
             this.btnTareasTerminadas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTareasTerminadas.Location = new System.Drawing.Point(0, 201);
+            this.btnTareasTerminadas.Location = new System.Drawing.Point(679, 203);
             this.btnTareasTerminadas.Name = "btnTareasTerminadas";
-            this.btnTareasTerminadas.Size = new System.Drawing.Size(200, 98);
+            this.btnTareasTerminadas.Size = new System.Drawing.Size(311, 124);
             this.btnTareasTerminadas.TabIndex = 2;
             this.btnTareasTerminadas.Text = "Tareas finalizadas";
-            this.btnTareasTerminadas.UseVisualStyleBackColor = true;
+            this.btnTareasTerminadas.UseVisualStyleBackColor = false;
+            // 
+            // panelInformes
+            // 
+            this.panelInformes.Controls.Add(this.btnTareasTerminadas);
+            this.panelInformes.Controls.Add(this.btnPersonas);
+            this.panelInformes.Controls.Add(this.btnTiempoApp);
+            this.panelInformes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelInformes.FillColor = System.Drawing.Color.MidnightBlue;
+            this.panelInformes.FillColor2 = System.Drawing.Color.MidnightBlue;
+            this.panelInformes.FillColor3 = System.Drawing.Color.DarkMagenta;
+            this.panelInformes.FillColor4 = System.Drawing.Color.DarkMagenta;
+            this.panelInformes.Location = new System.Drawing.Point(0, 0);
+            this.panelInformes.Name = "panelInformes";
+            this.panelInformes.Size = new System.Drawing.Size(1044, 535);
+            this.panelInformes.TabIndex = 3;
             // 
             // btnPersonas
             // 
-            this.btnPersonas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPersonas.BackColor = System.Drawing.Color.Transparent;
+            this.btnPersonas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPersonas.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPersonas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnPersonas.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
-            this.btnPersonas.IconColor = System.Drawing.Color.Black;
+            this.btnPersonas.IconColor = System.Drawing.Color.MediumSpringGreen;
             this.btnPersonas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPersonas.IconSize = 70;
             this.btnPersonas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonas.Location = new System.Drawing.Point(0, 299);
+            this.btnPersonas.Location = new System.Drawing.Point(363, 203);
             this.btnPersonas.Name = "btnPersonas";
-            this.btnPersonas.Size = new System.Drawing.Size(200, 109);
+            this.btnPersonas.Size = new System.Drawing.Size(270, 117);
             this.btnPersonas.TabIndex = 3;
             this.btnPersonas.Text = "Personas";
-            this.btnPersonas.UseVisualStyleBackColor = true;
+            this.btnPersonas.UseVisualStyleBackColor = false;
             // 
-            // iconPictureBox1
+            // btnTiempoApp
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.ChartColumn;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 53;
-            this.iconPictureBox1.Location = new System.Drawing.Point(60, 24);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(60, 53);
-            this.iconPictureBox1.TabIndex = 0;
-            this.iconPictureBox1.TabStop = false;
+            this.btnTiempoApp.BackColor = System.Drawing.Color.Transparent;
+            this.btnTiempoApp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnTiempoApp.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTiempoApp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnTiempoApp.IconChar = FontAwesome.Sharp.IconChar.ClockFour;
+            this.btnTiempoApp.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnTiempoApp.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTiempoApp.IconSize = 70;
+            this.btnTiempoApp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTiempoApp.Location = new System.Drawing.Point(25, 207);
+            this.btnTiempoApp.Name = "btnTiempoApp";
+            this.btnTiempoApp.Size = new System.Drawing.Size(321, 113);
+            this.btnTiempoApp.TabIndex = 1;
+            this.btnTiempoApp.Text = "Tiempo en la APP";
+            this.btnTiempoApp.UseVisualStyleBackColor = false;
             // 
             // FormInformes
             // 
@@ -131,25 +110,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1044, 535);
             this.Controls.Add(this.panelInformes);
-            this.Controls.Add(this.panelControlInformes);
             this.Name = "FormInformes";
             this.Text = "Informes";
             this.Load += new System.EventHandler(this.FormInformes_Load);
-            this.panelControlInformes.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.panelInformes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panelControlInformes;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panelInformes;
-        private FontAwesome.Sharp.IconButton btnPersonas;
         private FontAwesome.Sharp.IconButton btnTareasTerminadas;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel panelInformes;
+        private FontAwesome.Sharp.IconButton btnPersonas;
         private FontAwesome.Sharp.IconButton btnTiempoApp;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }

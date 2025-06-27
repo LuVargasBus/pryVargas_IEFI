@@ -53,10 +53,10 @@ namespace pryVargas_IEFI
         }
 
 
-        private void btnEdiatrPerfil_Click(object sender, EventArgs e)
-        {
-            //AbrirFormularioEnPanel(new FormEditarPerfil());
-        }
+        //private void btnEdiatrPerfil_Click(object sender, EventArgs e)
+        //{
+        //    //AbrirFormularioEnPanel(new FormEditarPerfil());
+        //}
 
         private void FormUsuario_Load(object sender, EventArgs e)
         {

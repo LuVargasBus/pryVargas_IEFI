@@ -41,7 +41,7 @@ namespace pryVargas_IEFI
                 conn.Open();
                 string query = @"SELECT u.id_usuario, u.nombre_usuario, u.apellido_usuario, 
                         t.id_tarea, t.nombre_tarea, t.categoria_tarea, t.descripcion_tarea, t.prioridad_tarea, t.vencimiento_tarea,
-                        tu.fecha_asignacion
+                        tu.fecha_asignacion, t.estado_tarea
                  FROM Usuarios u
                  JOIN Tareas_Usuario tu ON u.id_usuario = tu.id_usuario
                  JOIN Tareas t ON t.id_tarea = tu.id_tarea";
@@ -63,7 +63,8 @@ namespace pryVargas_IEFI
                             DescripcionTarea = reader["descripcion_tarea"].ToString(),
                             PrioridadTarea = reader["prioridad_tarea"].ToString(),
                             FechaAsignacion = Convert.ToDateTime(reader["fecha_asignacion"]),
-                            VencimientoTarea = Convert.ToDateTime(reader["vencimiento_tarea"])
+                            VencimientoTarea = Convert.ToDateTime(reader["vencimiento_tarea"]),
+                            EstadoTarea = reader["estado_tarea"].ToString()
 
                         };
 
@@ -82,16 +83,16 @@ namespace pryVargas_IEFI
                 using (SqlConnection conn = conexion.ObtenerConexion())
                 {
                     conn.Open();
-                    string query = @"SELECT u.id_usuario, u.nombre_usuario, u.apellido_usuario, 
-                                    t.id_tarea, t.nombre_tarea, t.categoria_tarea, 
-                                    t.descripcion_tarea, t.prioridad_tarea, t.vencimiento_tarea, 
-                                    tu.fecha_asignacion
-                             FROM Usuarios u
-                             JOIN Tareas_Usuario tu ON u.id_usuario = tu.id_usuario
-                             JOIN Tareas t ON t.id_tarea = tu.id_tarea
-                             WHERE u.id_usuario = @idUsuario";
+                string query = @"SELECT u.id_usuario, u.nombre_usuario, u.apellido_usuario, 
+                        t.id_tarea, t.nombre_tarea, t.categoria_tarea, 
+                        t.descripcion_tarea, t.prioridad_tarea, t.vencimiento_tarea, 
+                        tu.fecha_asignacion, t.estado_tarea
+                 FROM Usuarios u
+                 JOIN Tareas_Usuario tu ON u.id_usuario = tu.id_usuario
+                 JOIN Tareas t ON t.id_tarea = tu.id_tarea
+                 WHERE u.id_usuario = @idUsuario";
 
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
 
@@ -110,7 +111,8 @@ namespace pryVargas_IEFI
                                     DescripcionTarea = reader["descripcion_tarea"].ToString(),
                                     PrioridadTarea = reader["prioridad_tarea"].ToString(),
                                     VencimientoTarea = Convert.ToDateTime(reader["vencimiento_tarea"]),
-                                    FechaAsignacion = Convert.ToDateTime(reader["fecha_asignacion"])
+                                    FechaAsignacion = Convert.ToDateTime(reader["fecha_asignacion"]),
+                                    EstadoTarea = reader["estado_tarea"].ToString()
                                 };
 
                                 listaTareasPorUsuarioLogueado.Add(tareaUsuario);
@@ -120,7 +122,23 @@ namespace pryVargas_IEFI
                 }
                 return listaTareasPorUsuarioLogueado;
          }
-        
+
+        public void ModificarEstadoTarea(int idTarea, string nuevoEstado)
+        {
+            using (SqlConnection conn = conexion.ObtenerConexion())
+            {
+                conn.Open();
+                string query = "UPDATE Tareas SET estado_tarea = @estado WHERE id_tarea = @id";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@estado", nuevoEstado);
+                    cmd.Parameters.AddWithValue("@id", idTarea);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
 
     }
 }

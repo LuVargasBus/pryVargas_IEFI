@@ -65,11 +65,11 @@
             this.btnSolicitar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSolicitar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSolicitar.FillColor = System.Drawing.Color.Indigo;
-            this.btnSolicitar.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSolicitar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSolicitar.ForeColor = System.Drawing.Color.White;
-            this.btnSolicitar.Location = new System.Drawing.Point(640, 330);
+            this.btnSolicitar.Location = new System.Drawing.Point(627, 322);
             this.btnSolicitar.Name = "btnSolicitar";
-            this.btnSolicitar.Size = new System.Drawing.Size(180, 59);
+            this.btnSolicitar.Size = new System.Drawing.Size(193, 67);
             this.btnSolicitar.TabIndex = 19;
             this.btnSolicitar.Text = "Enviar solicitud";
             // 

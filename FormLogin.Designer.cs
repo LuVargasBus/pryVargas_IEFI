@@ -120,6 +120,7 @@
             this.btnIngresar.Size = new System.Drawing.Size(357, 45);
             this.btnIngresar.TabIndex = 9;
             this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click_1);
             // 
             // linkContrasena
             // 
