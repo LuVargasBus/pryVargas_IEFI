@@ -58,7 +58,7 @@
             this.picBoxUser.BackColor = System.Drawing.Color.Transparent;
             this.picBoxUser.Image = ((System.Drawing.Image)(resources.GetObject("picBoxUser.Image")));
             this.picBoxUser.ImageRotate = 0F;
-            this.picBoxUser.Location = new System.Drawing.Point(31, 94);
+            this.picBoxUser.Location = new System.Drawing.Point(70, 117);
             this.picBoxUser.Name = "picBoxUser";
             this.picBoxUser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.picBoxUser.Size = new System.Drawing.Size(170, 161);
@@ -80,7 +80,7 @@
             this.panelUser.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.panelUser.Location = new System.Drawing.Point(0, 0);
             this.panelUser.Name = "panelUser";
-            this.panelUser.Size = new System.Drawing.Size(326, 801);
+            this.panelUser.Size = new System.Drawing.Size(353, 758);
             this.panelUser.TabIndex = 15;
             // 
             // lblSaludo
@@ -109,7 +109,7 @@
             this.btnSolicitudes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSolicitudes.Location = new System.Drawing.Point(31, 630);
             this.btnSolicitudes.Name = "btnSolicitudes";
-            this.btnSolicitudes.Size = new System.Drawing.Size(231, 110);
+            this.btnSolicitudes.Size = new System.Drawing.Size(267, 110);
             this.btnSolicitudes.TabIndex = 17;
             this.btnSolicitudes.Text = "Solicitudes";
             this.btnSolicitudes.UseVisualStyleBackColor = false;
@@ -130,7 +130,7 @@
             this.btnVerTareas.Location = new System.Drawing.Point(31, 485);
             this.btnVerTareas.Name = "btnVerTareas";
             this.btnVerTareas.Padding = new System.Windows.Forms.Padding(0, 20, 25, 0);
-            this.btnVerTareas.Size = new System.Drawing.Size(231, 105);
+            this.btnVerTareas.Size = new System.Drawing.Size(267, 105);
             this.btnVerTareas.TabIndex = 16;
             this.btnVerTareas.Text = "Ver mis tareas";
             this.btnVerTareas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -150,10 +150,10 @@
             this.btnEditarPerfil.IconColor = System.Drawing.Color.DeepPink;
             this.btnEditarPerfil.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEditarPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditarPerfil.Location = new System.Drawing.Point(31, 353);
+            this.btnEditarPerfil.Location = new System.Drawing.Point(31, 332);
             this.btnEditarPerfil.Name = "btnEditarPerfil";
             this.btnEditarPerfil.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.btnEditarPerfil.Size = new System.Drawing.Size(231, 110);
+            this.btnEditarPerfil.Size = new System.Drawing.Size(267, 110);
             this.btnEditarPerfil.TabIndex = 15;
             this.btnEditarPerfil.Text = "Editar perfil";
             this.btnEditarPerfil.UseVisualStyleBackColor = false;
@@ -162,20 +162,21 @@
             // 
             this.panelUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelUsuario.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.panelUsuario.Location = new System.Drawing.Point(326, 0);
+            this.panelUsuario.Location = new System.Drawing.Point(353, 0);
             this.panelUsuario.Name = "panelUsuario";
-            this.panelUsuario.Size = new System.Drawing.Size(1040, 801);
+            this.panelUsuario.Size = new System.Drawing.Size(1003, 758);
             this.panelUsuario.TabIndex = 16;
             // 
             // FormUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1366, 801);
+            this.ClientSize = new System.Drawing.Size(1356, 758);
             this.Controls.Add(this.panelUsuario);
             this.Controls.Add(this.panelUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "FormUsuario";
             this.Text = "Mi perfil";
             this.Load += new System.EventHandler(this.FormUsuario_Load);

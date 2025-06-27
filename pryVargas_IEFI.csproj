@@ -61,6 +61,7 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -144,10 +145,13 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositorioSesion.cs" />
+    <Compile Include="RepositorioSolicitudxUsuario.cs" />
     <Compile Include="RepositorioTareas.cs" />
     <Compile Include="RepositorioTareaxUsuario.cs" />
     <Compile Include="RepositorioUsuario.cs" />
     <Compile Include="Sesion.cs" />
+    <Compile Include="Solicitud.cs" />
+    <Compile Include="SolicitudesxUsuario.cs" />
     <Compile Include="Tareas.cs" />
     <Compile Include="TareasPorUsuario.cs" />
     <Compile Include="Usuario.cs" />

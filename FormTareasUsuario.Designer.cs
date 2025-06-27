@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTareasUsuario));
             this.lblTareasUsuario = new System.Windows.Forms.Label();
             this.cmbPrioridadTarea = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dgvTareaUsuario = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -68,7 +69,7 @@
             "Alta",
             "Media",
             "Baja"});
-            this.cmbPrioridadTarea.Location = new System.Drawing.Point(38, 97);
+            this.cmbPrioridadTarea.Location = new System.Drawing.Point(98, 97);
             this.cmbPrioridadTarea.Name = "cmbPrioridadTarea";
             this.cmbPrioridadTarea.Size = new System.Drawing.Size(325, 36);
             this.cmbPrioridadTarea.TabIndex = 16;
@@ -77,34 +78,34 @@
             // dgvTareaUsuario
             // 
             this.dgvTareaUsuario.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvTareaUsuario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvTareaUsuario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvTareaUsuario.BackgroundColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTareaUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTareaUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvTareaUsuario.ColumnHeadersHeight = 4;
             this.dgvTareaUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTareaUsuario.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTareaUsuario.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvTareaUsuario.GridColor = System.Drawing.Color.Indigo;
             this.dgvTareaUsuario.Location = new System.Drawing.Point(38, 237);
             this.dgvTareaUsuario.Name = "dgvTareaUsuario";
             this.dgvTareaUsuario.RowHeadersVisible = false;
             this.dgvTareaUsuario.RowHeadersWidth = 51;
             this.dgvTareaUsuario.RowTemplate.Height = 24;
-            this.dgvTareaUsuario.Size = new System.Drawing.Size(946, 255);
+            this.dgvTareaUsuario.Size = new System.Drawing.Size(1086, 255);
             this.dgvTareaUsuario.TabIndex = 17;
             this.dgvTareaUsuario.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvTareaUsuario.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -132,7 +133,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(34, 47);
+            this.label1.Location = new System.Drawing.Point(94, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 24);
             this.label1.TabIndex = 18;
@@ -155,7 +156,7 @@
             "Alta",
             "Media",
             "Baja"});
-            this.cmbEstadoTarea.Location = new System.Drawing.Point(412, 97);
+            this.cmbEstadoTarea.Location = new System.Drawing.Point(719, 97);
             this.cmbEstadoTarea.Name = "cmbEstadoTarea";
             this.cmbEstadoTarea.Size = new System.Drawing.Size(325, 36);
             this.cmbEstadoTarea.TabIndex = 19;
@@ -165,9 +166,9 @@
             // 
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(408, 57);
+            this.lblEstado.Location = new System.Drawing.Point(715, 57);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(88, 30);
+            this.lblEstado.Size = new System.Drawing.Size(70, 24);
             this.lblEstado.TabIndex = 20;
             this.lblEstado.Text = "Estado";
             // 
@@ -180,7 +181,7 @@
             this.btnGuardarCambios.FillColor = System.Drawing.Color.Indigo;
             this.btnGuardarCambios.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambios.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarCambios.Location = new System.Drawing.Point(811, 525);
+            this.btnGuardarCambios.Location = new System.Drawing.Point(951, 520);
             this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
             this.btnGuardarCambios.Size = new System.Drawing.Size(173, 68);
@@ -193,7 +194,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(1025, 623);
+            this.ClientSize = new System.Drawing.Size(1356, 758);
             this.Controls.Add(this.btnGuardarCambios);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.cmbEstadoTarea);
@@ -201,8 +202,9 @@
             this.Controls.Add(this.dgvTareaUsuario);
             this.Controls.Add(this.cmbPrioridadTarea);
             this.Controls.Add(this.lblTareasUsuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTareasUsuario";
-            this.Text = "FormTareasUsuario";
+            this.Text = "Tareas usuario";
             this.Load += new System.EventHandler(this.FormTareasUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTareaUsuario)).EndInit();
             this.ResumeLayout(false);

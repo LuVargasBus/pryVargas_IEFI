@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSolicitud));
             this.label1 = new System.Windows.Forms.Label();
             this.btnSolicitar = new Guna.UI2.WinForms.Guna2Button();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -67,11 +68,12 @@
             this.btnSolicitar.FillColor = System.Drawing.Color.Indigo;
             this.btnSolicitar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSolicitar.ForeColor = System.Drawing.Color.White;
-            this.btnSolicitar.Location = new System.Drawing.Point(627, 322);
+            this.btnSolicitar.Location = new System.Drawing.Point(425, 358);
             this.btnSolicitar.Name = "btnSolicitar";
             this.btnSolicitar.Size = new System.Drawing.Size(193, 67);
             this.btnSolicitar.TabIndex = 19;
             this.btnSolicitar.Text = "Enviar solicitud";
+            this.btnSolicitar.Click += new System.EventHandler(this.btnSolicitar_Click);
             // 
             // iconPictureBox1
             // 
@@ -80,10 +82,10 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.BookOpenReader;
             this.iconPictureBox1.IconColor = System.Drawing.Color.Magenta;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 50;
-            this.iconPictureBox1.Location = new System.Drawing.Point(51, 121);
+            this.iconPictureBox1.IconSize = 68;
+            this.iconPictureBox1.Location = new System.Drawing.Point(51, 103);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(64, 50);
+            this.iconPictureBox1.Size = new System.Drawing.Size(154, 68);
             this.iconPictureBox1.TabIndex = 22;
             this.iconPictureBox1.TabStop = false;
             // 
@@ -94,10 +96,10 @@
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Heartbeat;
             this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 50;
-            this.iconPictureBox2.Location = new System.Drawing.Point(51, 237);
+            this.iconPictureBox2.IconSize = 68;
+            this.iconPictureBox2.Location = new System.Drawing.Point(51, 219);
             this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(64, 50);
+            this.iconPictureBox2.Size = new System.Drawing.Size(154, 68);
             this.iconPictureBox2.TabIndex = 23;
             this.iconPictureBox2.TabStop = false;
             // 
@@ -108,10 +110,10 @@
             this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Baby;
             this.iconPictureBox3.IconColor = System.Drawing.Color.MediumTurquoise;
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 50;
-            this.iconPictureBox3.Location = new System.Drawing.Point(314, 121);
+            this.iconPictureBox3.IconSize = 68;
+            this.iconPictureBox3.Location = new System.Drawing.Point(314, 103);
             this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(64, 50);
+            this.iconPictureBox3.Size = new System.Drawing.Size(154, 68);
             this.iconPictureBox3.TabIndex = 24;
             this.iconPictureBox3.TabStop = false;
             // 
@@ -122,10 +124,10 @@
             this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.Church;
             this.iconPictureBox4.IconColor = System.Drawing.Color.ForestGreen;
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.IconSize = 50;
-            this.iconPictureBox4.Location = new System.Drawing.Point(314, 237);
+            this.iconPictureBox4.IconSize = 68;
+            this.iconPictureBox4.Location = new System.Drawing.Point(314, 219);
             this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(64, 50);
+            this.iconPictureBox4.Size = new System.Drawing.Size(154, 68);
             this.iconPictureBox4.TabIndex = 25;
             this.iconPictureBox4.TabStop = false;
             // 
@@ -136,10 +138,10 @@
             this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Sun;
             this.iconPictureBox5.IconColor = System.Drawing.Color.Gold;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.IconSize = 50;
-            this.iconPictureBox5.Location = new System.Drawing.Point(604, 121);
+            this.iconPictureBox5.IconSize = 68;
+            this.iconPictureBox5.Location = new System.Drawing.Point(32, 357);
             this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(64, 50);
+            this.iconPictureBox5.Size = new System.Drawing.Size(89, 68);
             this.iconPictureBox5.TabIndex = 26;
             this.iconPictureBox5.TabStop = false;
             // 
@@ -152,7 +154,7 @@
             this.radioBtnEstudio.CheckedState.InnerColor = System.Drawing.Color.White;
             this.radioBtnEstudio.CheckedState.InnerOffset = -4;
             this.radioBtnEstudio.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtnEstudio.Location = new System.Drawing.Point(135, 136);
+            this.radioBtnEstudio.Location = new System.Drawing.Point(135, 118);
             this.radioBtnEstudio.Name = "radioBtnEstudio";
             this.radioBtnEstudio.Size = new System.Drawing.Size(96, 28);
             this.radioBtnEstudio.TabIndex = 27;
@@ -171,7 +173,7 @@
             this.radioBtnSalud.CheckedState.InnerColor = System.Drawing.Color.White;
             this.radioBtnSalud.CheckedState.InnerOffset = -4;
             this.radioBtnSalud.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtnSalud.Location = new System.Drawing.Point(135, 256);
+            this.radioBtnSalud.Location = new System.Drawing.Point(135, 238);
             this.radioBtnSalud.Name = "radioBtnSalud";
             this.radioBtnSalud.Size = new System.Drawing.Size(80, 28);
             this.radioBtnSalud.TabIndex = 28;
@@ -190,7 +192,7 @@
             this.radioBtnMaternidad.CheckedState.InnerColor = System.Drawing.Color.White;
             this.radioBtnMaternidad.CheckedState.InnerOffset = -4;
             this.radioBtnMaternidad.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtnMaternidad.Location = new System.Drawing.Point(418, 136);
+            this.radioBtnMaternidad.Location = new System.Drawing.Point(487, 118);
             this.radioBtnMaternidad.Name = "radioBtnMaternidad";
             this.radioBtnMaternidad.Size = new System.Drawing.Size(131, 28);
             this.radioBtnMaternidad.TabIndex = 29;
@@ -209,7 +211,7 @@
             this.radioBtnMatrimonio.CheckedState.InnerColor = System.Drawing.Color.White;
             this.radioBtnMatrimonio.CheckedState.InnerOffset = -4;
             this.radioBtnMatrimonio.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtnMatrimonio.Location = new System.Drawing.Point(418, 256);
+            this.radioBtnMatrimonio.Location = new System.Drawing.Point(499, 238);
             this.radioBtnMatrimonio.Name = "radioBtnMatrimonio";
             this.radioBtnMatrimonio.Size = new System.Drawing.Size(131, 28);
             this.radioBtnMatrimonio.TabIndex = 30;
@@ -228,7 +230,7 @@
             this.radioBtnVacaciones.CheckedState.InnerColor = System.Drawing.Color.White;
             this.radioBtnVacaciones.CheckedState.InnerOffset = -4;
             this.radioBtnVacaciones.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtnVacaciones.Location = new System.Drawing.Point(690, 136);
+            this.radioBtnVacaciones.Location = new System.Drawing.Point(127, 377);
             this.radioBtnVacaciones.Name = "radioBtnVacaciones";
             this.radioBtnVacaciones.Size = new System.Drawing.Size(130, 28);
             this.radioBtnVacaciones.TabIndex = 31;
@@ -243,7 +245,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(860, 417);
+            this.ClientSize = new System.Drawing.Size(1356, 758);
             this.Controls.Add(this.radioBtnVacaciones);
             this.Controls.Add(this.radioBtnMatrimonio);
             this.Controls.Add(this.radioBtnMaternidad);
@@ -256,8 +258,10 @@
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSolicitar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSolicitud";
             this.Text = "Solicitud ";
+            this.Load += new System.EventHandler(this.FormSolicitud_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();

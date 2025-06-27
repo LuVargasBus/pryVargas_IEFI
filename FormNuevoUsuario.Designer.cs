@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNuevoUsuario));
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.cmbRol = new System.Windows.Forms.ComboBox();
@@ -44,19 +45,19 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(44, 57);
+            this.txtNombre.Location = new System.Drawing.Point(82, 126);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(317, 38);
+            this.txtNombre.Size = new System.Drawing.Size(412, 52);
             this.txtNombre.TabIndex = 15;
             // 
             // txtApellido
             // 
             this.txtApellido.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellido.Location = new System.Drawing.Point(418, 70);
+            this.txtApellido.Location = new System.Drawing.Point(82, 247);
             this.txtApellido.Multiline = true;
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(317, 38);
+            this.txtApellido.Size = new System.Drawing.Size(412, 52);
             this.txtApellido.TabIndex = 14;
             // 
             // cmbRol
@@ -66,16 +67,16 @@
             this.cmbRol.Items.AddRange(new object[] {
             "Admin",
             "Usuario"});
-            this.cmbRol.Location = new System.Drawing.Point(48, 276);
+            this.cmbRol.Location = new System.Drawing.Point(585, 247);
             this.cmbRol.Name = "cmbRol";
-            this.cmbRol.Size = new System.Drawing.Size(315, 29);
+            this.cmbRol.Size = new System.Drawing.Size(410, 29);
             this.cmbRol.TabIndex = 13;
             // 
             // lblRol
             // 
             this.lblRol.AutoSize = true;
             this.lblRol.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRol.Location = new System.Drawing.Point(44, 236);
+            this.lblRol.Location = new System.Drawing.Point(577, 202);
             this.lblRol.Name = "lblRol";
             this.lblRol.Size = new System.Drawing.Size(34, 21);
             this.lblRol.TabIndex = 11;
@@ -86,7 +87,7 @@
             // 
             this.lblApellido.AutoSize = true;
             this.lblApellido.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellido.Location = new System.Drawing.Point(414, 41);
+            this.lblApellido.Location = new System.Drawing.Point(89, 214);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(69, 21);
             this.lblApellido.TabIndex = 10;
@@ -96,7 +97,7 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(42, 28);
+            this.lblNombre.Location = new System.Drawing.Point(80, 97);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(68, 21);
             this.lblNombre.TabIndex = 9;
@@ -105,26 +106,26 @@
             // txtNickname
             // 
             this.txtNickname.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNickname.Location = new System.Drawing.Point(46, 180);
+            this.txtNickname.Location = new System.Drawing.Point(84, 383);
             this.txtNickname.Multiline = true;
             this.txtNickname.Name = "txtNickname";
-            this.txtNickname.Size = new System.Drawing.Size(317, 38);
+            this.txtNickname.Size = new System.Drawing.Size(412, 52);
             this.txtNickname.TabIndex = 16;
             // 
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.Location = new System.Drawing.Point(418, 180);
+            this.txtContraseña.Location = new System.Drawing.Point(583, 121);
             this.txtContraseña.Multiline = true;
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(317, 38);
+            this.txtContraseña.Size = new System.Drawing.Size(412, 52);
             this.txtContraseña.TabIndex = 17;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(414, 153);
+            this.label1.Location = new System.Drawing.Point(579, 87);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 21);
             this.label1.TabIndex = 18;
@@ -135,7 +136,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(44, 143);
+            this.label2.Location = new System.Drawing.Point(82, 346);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 21);
             this.label2.TabIndex = 19;
@@ -148,11 +149,12 @@
             this.btnCrearUsuario.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCrearUsuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCrearUsuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCrearUsuario.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCrearUsuario.FillColor = System.Drawing.Color.Indigo;
+            this.btnCrearUsuario.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearUsuario.ForeColor = System.Drawing.Color.White;
-            this.btnCrearUsuario.Location = new System.Drawing.Point(545, 276);
+            this.btnCrearUsuario.Location = new System.Drawing.Point(720, 383);
             this.btnCrearUsuario.Name = "btnCrearUsuario";
-            this.btnCrearUsuario.Size = new System.Drawing.Size(180, 45);
+            this.btnCrearUsuario.Size = new System.Drawing.Size(275, 59);
             this.btnCrearUsuario.TabIndex = 20;
             this.btnCrearUsuario.Text = "Crear";
             this.btnCrearUsuario.Click += new System.EventHandler(this.btnCrearUsuario_Click_1);
@@ -161,7 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1356, 758);
             this.Controls.Add(this.btnCrearUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -173,6 +175,7 @@
             this.Controls.Add(this.lblRol);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormNuevoUsuario";
             this.Text = "Nuevo usuario";
             this.Load += new System.EventHandler(this.FormNuevoUsuario_Load);

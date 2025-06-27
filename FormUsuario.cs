@@ -15,6 +15,8 @@ namespace pryVargas_IEFI
     {
         private ConexionDB conexion = new ConexionDB();
         private Usuario usuarioLogueado;
+        private Usuario usuario;
+        private Solicitud solicitud;
 
         public int IdSesion { get; set; }
         public FormUsuario(Usuario usuario)

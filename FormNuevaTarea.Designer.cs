@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNuevaTarea));
             this.label5 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtCategoria = new System.Windows.Forms.TextBox();
@@ -45,7 +46,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(424, 241);
+            this.label5.Location = new System.Drawing.Point(479, 326);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 24);
             this.label5.TabIndex = 22;
@@ -54,16 +55,16 @@
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(428, 50);
+            this.txtDescripcion.Location = new System.Drawing.Point(473, 118);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(384, 151);
+            this.txtDescripcion.Size = new System.Drawing.Size(592, 173);
             this.txtDescripcion.TabIndex = 21;
             // 
             // txtCategoria
             // 
             this.txtCategoria.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCategoria.Location = new System.Drawing.Point(37, 161);
+            this.txtCategoria.Location = new System.Drawing.Point(53, 229);
             this.txtCategoria.Multiline = true;
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(325, 40);
@@ -73,7 +74,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(434, 15);
+            this.label4.Location = new System.Drawing.Point(479, 83);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(215, 24);
             this.label4.TabIndex = 19;
@@ -83,7 +84,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(43, 125);
+            this.label3.Location = new System.Drawing.Point(59, 193);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 24);
             this.label3.TabIndex = 18;
@@ -93,7 +94,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 241);
+            this.label2.Location = new System.Drawing.Point(49, 309);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 24);
             this.label2.TabIndex = 17;
@@ -103,7 +104,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(43, 15);
+            this.label1.Location = new System.Drawing.Point(59, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 24);
             this.label1.TabIndex = 16;
@@ -117,7 +118,7 @@
             "Alta ",
             "Media",
             "Baja"});
-            this.cmbPrioridadTarea.Location = new System.Drawing.Point(37, 291);
+            this.cmbPrioridadTarea.Location = new System.Drawing.Point(53, 359);
             this.cmbPrioridadTarea.Name = "cmbPrioridadTarea";
             this.cmbPrioridadTarea.Size = new System.Drawing.Size(325, 32);
             this.cmbPrioridadTarea.TabIndex = 15;
@@ -125,7 +126,7 @@
             // txtTarea
             // 
             this.txtTarea.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTarea.Location = new System.Drawing.Point(37, 50);
+            this.txtTarea.Location = new System.Drawing.Point(53, 118);
             this.txtTarea.Multiline = true;
             this.txtTarea.Name = "txtTarea";
             this.txtTarea.Size = new System.Drawing.Size(325, 40);
@@ -138,7 +139,7 @@
             this.dataTimeVencimiento.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dataTimeVencimiento.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataTimeVencimiento.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dataTimeVencimiento.Location = new System.Drawing.Point(428, 291);
+            this.dataTimeVencimiento.Location = new System.Drawing.Point(483, 376);
             this.dataTimeVencimiento.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dataTimeVencimiento.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dataTimeVencimiento.Name = "dataTimeVencimiento";
@@ -155,7 +156,7 @@
             this.btnGuardar.FillColor = System.Drawing.Color.Purple;
             this.btnGuardar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(602, 397);
+            this.btnGuardar.Location = new System.Drawing.Point(885, 518);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(180, 45);
             this.btnGuardar.TabIndex = 26;
@@ -166,7 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(862, 490);
+            this.ClientSize = new System.Drawing.Size(1356, 758);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.dataTimeVencimiento);
             this.Controls.Add(this.label5);
@@ -178,8 +179,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbPrioridadTarea);
             this.Controls.Add(this.txtTarea);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormNuevaTarea";
-            this.Text = "FormNuevaTarea";
+            this.Text = "Nueva Tarea";
             this.Load += new System.EventHandler(this.FormNuevaTarea_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

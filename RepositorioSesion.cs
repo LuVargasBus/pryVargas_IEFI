@@ -69,5 +69,34 @@ namespace pryVargas_IEFI
             }
 
         }
+
+        public List<(string NombreUsuario, int TiempoTotalSegundos)> ObtenerTiempoTotalPorUsuario()
+        {
+            List<(string, int)> lista = new List<(string, int)>();
+
+            using (SqlConnection conn = conexion.ObtenerConexion())
+            {
+                conn.Open();
+                string query = @"
+            SELECT u.nombre_usuario, SUM(DATEDIFF(SECOND, s.inicio_sesion, s.fin_sesion)) AS total_segundos
+            FROM Sesiones s
+            JOIN Usuarios u ON u.id_usuario = s.id_usuario
+            WHERE s.fin_sesion IS NOT NULL
+            GROUP BY u.nombre_usuario";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        string nombre = reader["nombre_usuario"].ToString();
+                        int totalSegundos = Convert.ToInt32(reader["total_segundos"]);
+                        lista.Add((nombre, totalSegundos));
+                    }
+                }
+            }
+
+            return lista;
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace pryVargas_IEFI
 {
@@ -38,7 +39,14 @@ namespace pryVargas_IEFI
             using (SqlConnection conn = conexion.ObtenerConexion())
             {
                 conn.Open();
-                string query = "SELECT id_usuario, rol_usuario FROM Usuarios WHERE nickname_usuario = @nickname AND contrasena_usuario = @contrasena";
+                string query =
+                    "SELECT id_usuario, rol_usuario , nombre_usuario, apellido_usuario " +
+                    "FROM Usuarios" +
+                    " WHERE nickname_usuario = @nickname " +
+                    "AND contrasena_usuario = @contrasena";
+
+
+
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
@@ -51,8 +59,11 @@ namespace pryVargas_IEFI
                         {
                             return new Usuario
                             {
+
                                 IdUsuario = reader.GetInt32(0),
                                 RolUsuario = reader.GetString(1),
+                                NombreUsuario = reader.GetString(2),
+                                ApellidoUsuario = reader.GetString(3),
                                 NickName = nickname,
                                 ContrasenaUsuario = contrasena
                             };

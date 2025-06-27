@@ -48,10 +48,11 @@ namespace pryVargas_IEFI
             }
 
             int idSesion = repositorioSesion.RegistrarInicioSesion(usuario.IdUsuario);
+            Sesion.UsuarioActual = usuario;
 
             if (usuario.RolUsuario == "admin")
             {
-                FormAdministracion adminForm = new FormAdministracion();
+                Administración adminForm = new Administración();
 
                 adminForm.Show();
             }

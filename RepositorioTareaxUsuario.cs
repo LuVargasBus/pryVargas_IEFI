@@ -139,6 +139,39 @@ namespace pryVargas_IEFI
             }
         }
 
+        public List<(string nombreUsuario, int total, int finalizadas)> ObtenerProgresoTareasPorUsuario()
+{
+    List<(string, int, int)> lista = new List<(string, int, int)>();
+
+    using (SqlConnection conn = conexion.ObtenerConexion())
+    {
+        conn.Open();
+                string query = @"
+            SELECT u.nombre_usuario,
+                   COUNT(*) AS total,
+                   SUM(CASE WHEN t.estado_tarea = 'Finalizadas' THEN 1 ELSE 0 END) AS finalizadas
+            FROM Tareas t
+            JOIN Tareas_Usuario tu ON t.id_tarea = tu.id_tarea
+            JOIN Usuarios u ON tu.id_usuario = u.id_usuario
+            GROUP BY u.nombre_usuario";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+        {
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    string nombre = reader["nombre_usuario"].ToString();
+                    int total = Convert.ToInt32(reader["total"]);
+                    int finalizadas = Convert.ToInt32(reader["finalizadas"]);
+                    lista.Add((nombre, total, finalizadas));
+                }
+            }
+        }
+    }
+
+    return lista;
+}
 
     }
 }

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace pryVargas_IEFI
 {
-    public partial class FormAdministracion : Form
+    public partial class Administración : Form
     {
-        public FormAdministracion()
+        public Administración()
         {
             InitializeComponent();
         }
@@ -55,12 +55,9 @@ namespace pryVargas_IEFI
 
         private void btnInformes_Click(object sender, EventArgs e)
         {
-            AbrirFormularioEnPanel(new FormInformes());
+            AbrirFormularioEnPanel(new Informes());
         }
 
-        private void lblHomee_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }
